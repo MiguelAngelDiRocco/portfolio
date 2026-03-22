@@ -12,6 +12,7 @@ export default function ContactSection() {
   const [status, setStatus] = useState('idle') // idle | sending | success | error
   const [copied, setCopied] = useState(false)
   const [errors, setErrors] = useState({})
+  const [lastSubmit, setLastSubmit] = useState(0)
 
   const anim = {
     initial: { opacity: 0, y: 40 },
@@ -44,14 +45,25 @@ export default function ContactSection() {
     e.preventDefault()
     if (!validate()) return
 
+    // Rate limiting — 30 segundos entre envíos
+    const now = Date.now()
+    if (now - lastSubmit < 30000) return
+    setLastSubmit(now)
+
     setStatus('sending')
     try {
       const formspreeId = import.meta.env.VITE_FORMSPREE_ID
+      const controller = new AbortController()
+      const timeout = setTimeout(() => controller.abort(), 10000)
+
       const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
+        signal: controller.signal,
       })
+      clearTimeout(timeout)
+
       if (res.ok) {
         setStatus('success')
         setFormData({ name: '', email: '', message: '' })
