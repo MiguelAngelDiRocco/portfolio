@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Dark mode basado en clase .dark en <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* === Configuración de Tailwind v4 con custom theme === */
+
+@theme {
+  /* Fuentes */
+  --font-display: "Playfair Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Colores personalizados */
+  --color-primary: #0F0F0F;
+  --color-primary-light: #FAFAFA;
+  --color-secondary: #1A1A1A;
+  --color-secondary-light: #FFFFFF;
+  --color-accent: #6366F1;
+  --color-accent-hover: #818CF8;
+  --color-text-dark: #F5F5F5;
+  --color-text-dark-secondary: #9CA3AF;
+  --color-text-light: #111111;
+  --color-text-light-secondary: #6B7280;
+  --color-border-dark: #2D2D2D;
+  --color-border-light: #E5E7EB;
+}
+
+/* Transición suave para cambio de tema */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+}

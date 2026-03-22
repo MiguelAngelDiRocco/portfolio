@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "Miguel Angel Di Rocco",
+    "title": "Data Scientist | Python · ML · Analytics",
+    "tagline": "Transformo datos en decisiones. Construyo modelos, automatizo procesos y creo soluciones basadas en evidencia.",
+    "cta_projects": "Ver mis proyectos",
+    "cta_contact": "Contactame"
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "bio_1": "Data Scientist con formación en Machine Learning, Deep Learning y Procesamiento de Lenguaje Natural (NLP). Experiencia en el desarrollo de modelos predictivos y sistemas de clasificación utilizando Python y SQL.",
+    "bio_2": "Capacidad para transformar datos complejos en soluciones accionables. Desde modelos de clasificación de sentimiento hasta predicciones de contaminación ambiental, cada proyecto busca generar impacto real con datos.",
+    "bio_3": "Profesional proactivo, con mentalidad analítica y orientado a resultados, en búsqueda de oportunidades en el área de ciencia de datos.",
+    "location": "Mar del Plata, Argentina",
+    "availability": "Disponible para trabajar",
+    "education": "Data Science I, II y III — Coderhouse",
+    "languages": "Español (nativo) · Inglés (intermedio)",
+    "interests": "ML · Deep Learning · NLP",
+    "download_cv": "Descargar CV"
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "view_demo": "Ver demo",
+    "view_code": "Ver código",
+    "show_more": "Ver más proyectos"
+  },
+  "skills": {
+    "heading": "Habilidades",
+    "languages": "Lenguajes",
+    "libraries": "ML / DL / NLP",
+    "tools": "Herramientas"
+  },
+  "contact": {
+    "heading": "Contacto",
+    "subtitle": "¿Tenés un proyecto en mente o una oportunidad laboral? ¡Escribime!",
+    "name_label": "Nombre",
+    "name_placeholder": "Tu nombre",
+    "email_label": "Email",
+    "email_placeholder": "tu@email.com",
+    "message_label": "Mensaje",
+    "message_placeholder": "Contame sobre tu proyecto o propuesta...",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Te responderé lo antes posible.",
+    "error": "Hubo un error al enviar. Podés escribirme directamente a",
+    "copy_email": "Copiar email",
+    "copied": "¡Copiado!"
+  },
+  "footer": {
+    "rights": "© 2026 Miguel. Todos los derechos reservados.",
+    "back_to_top": "Volver arriba"
+  }
+}

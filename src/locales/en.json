@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Miguel Angel Di Rocco",
+    "title": "Data Scientist | Python · ML · Analytics",
+    "tagline": "I turn data into decisions. I build models, automate processes, and create evidence-based solutions.",
+    "cta_projects": "See my projects",
+    "cta_contact": "Contact me"
+  },
+  "about": {
+    "heading": "About me",
+    "bio_1": "Data Scientist with training in Machine Learning, Deep Learning, and Natural Language Processing (NLP). Experience developing predictive models and classification systems using Python and SQL.",
+    "bio_2": "Skilled at transforming complex data into actionable solutions. From sentiment classification models to environmental pollution predictions, every project aims to create real impact with data.",
+    "bio_3": "Proactive professional with an analytical mindset and results-driven approach, seeking opportunities in the data science field.",
+    "location": "Mar del Plata, Argentina",
+    "availability": "Available for work",
+    "education": "Data Science I, II & III — Coderhouse",
+    "languages": "Spanish (native) · English (intermediate)",
+    "interests": "ML · Deep Learning · NLP",
+    "download_cv": "Download CV"
+  },
+  "projects": {
+    "heading": "Projects",
+    "view_demo": "Live demo",
+    "view_code": "View code",
+    "show_more": "Show more projects"
+  },
+  "skills": {
+    "heading": "Skills",
+    "languages": "Languages",
+    "libraries": "ML / DL / NLP",
+    "tools": "Tools"
+  },
+  "contact": {
+    "heading": "Contact",
+    "subtitle": "Have a project in mind or a job opportunity? Reach out!",
+    "name_label": "Name",
+    "name_placeholder": "Your name",
+    "email_label": "Email",
+    "email_placeholder": "you@email.com",
+    "message_label": "Message",
+    "message_placeholder": "Tell me about your project or proposal...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! I'll get back to you as soon as possible.",
+    "error": "There was an error sending. You can write me directly at",
+    "copy_email": "Copy email",
+    "copied": "Copied!"
+  },
+  "footer": {
+    "rights": "© 2026 Miguel. All rights reserved.",
+    "back_to_top": "Back to top"
+  }
+}
