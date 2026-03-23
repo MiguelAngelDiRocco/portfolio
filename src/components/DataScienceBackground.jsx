@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-const SYMBOLS = ['σ', 'μ', 'Σ', '∫', 'π', 'λ', '∂', '∇', '01', '{}', '</>']
+const SYMBOLS = ['σ', 'μ', 'Σ', '∫', 'π', 'λ', '∂', '∇', '01', '{}', '</>', 'f(x)', '∞', 'Δ', '≈']
 const DRIFT_ANIMS = ['ds-drift-1', 'ds-drift-2', 'ds-drift-3']
 
 function rand(min, max) {
@@ -13,26 +13,26 @@ function pick(arr) {
 
 export default function DataScienceBackground() {
   const { particles, symbols } = useMemo(() => {
-    const p = Array.from({ length: 35 }, (_, i) => ({
+    const p = Array.from({ length: 50 }, (_, i) => ({
       id: `p-${i}`,
       left: `${rand(2, 98)}%`,
       top: `${rand(2, 98)}%`,
-      size: rand(3, 6),
-      opacity: rand(0.15, 0.45),
+      size: rand(4, 8),
+      opacity: rand(0.3, 0.7),
       anim: pick(DRIFT_ANIMS),
-      duration: `${rand(25, 50)}s`,
+      duration: `${rand(20, 45)}s`,
       delay: `${-rand(0, 25)}s`,
     }))
 
-    const s = Array.from({ length: 10 }, (_, i) => ({
+    const s = Array.from({ length: 18 }, (_, i) => ({
       id: `s-${i}`,
       char: pick(SYMBOLS),
       left: `${rand(5, 95)}%`,
       top: `${rand(5, 95)}%`,
-      size: rand(16, 28),
-      opacity: rand(0.08, 0.2),
+      size: rand(20, 36),
+      opacity: rand(0.15, 0.4),
       anim: pick(DRIFT_ANIMS),
-      duration: `${rand(30, 60)}s`,
+      duration: `${rand(25, 55)}s`,
       delay: `${-rand(0, 30)}s`,
     }))
 
@@ -56,7 +56,7 @@ export default function DataScienceBackground() {
             width: `${p.size}px`,
             height: `${p.size}px`,
             borderRadius: '50%',
-            backgroundColor: '#6366F1',
+            backgroundColor: 'var(--color-accent)',
             opacity: p.opacity,
             animation: `${p.anim} ${p.duration} ${p.delay} ease-in-out infinite`,
           }}
@@ -73,7 +73,7 @@ export default function DataScienceBackground() {
             top: s.top,
             fontSize: `${s.size}px`,
             fontFamily: '"JetBrains Mono", monospace',
-            color: '#6366F1',
+            color: 'var(--color-accent)',
             opacity: s.opacity,
             userSelect: 'none',
             animation: `${s.anim} ${s.duration} ${s.delay} ease-in-out infinite`,
