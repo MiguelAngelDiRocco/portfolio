@@ -3,6 +3,7 @@
     "about": "About",
     "projects": "Projects",
     "skills": "Skills",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -28,13 +29,19 @@
     "heading": "Projects",
     "view_demo": "Live demo",
     "view_code": "View code",
-    "show_more": "Show more projects"
+    "show_more": "Show more projects",
+    "filter_all": "All"
   },
   "skills": {
     "heading": "Skills",
     "languages": "Languages",
     "libraries": "ML / DL / NLP",
     "tools": "Tools"
+  },
+  "blog": {
+    "heading": "Blog",
+    "subtitle": "Reflections and learnings from my Data Science projects.",
+    "read_more": "Read more"
   },
   "contact": {
     "heading": "Contact",

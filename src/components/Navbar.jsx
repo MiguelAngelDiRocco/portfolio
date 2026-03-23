@@ -5,7 +5,7 @@ import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
 import { useLanguage } from '../hooks/useLanguage'
 
-const navLinks = ['about', 'projects', 'skills', 'contact']
+const navLinks = ['about', 'projects', 'skills', 'blog', 'contact']
 
 export default function Navbar() {
   const { t } = useTranslation()

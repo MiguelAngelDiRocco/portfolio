@@ -3,6 +3,7 @@
     "about": "Sobre mí",
     "projects": "Proyectos",
     "skills": "Habilidades",
+    "blog": "Blog",
     "contact": "Contacto"
   },
   "hero": {
@@ -28,13 +29,19 @@
     "heading": "Proyectos",
     "view_demo": "Ver demo",
     "view_code": "Ver código",
-    "show_more": "Ver más proyectos"
+    "show_more": "Ver más proyectos",
+    "filter_all": "Todos"
   },
   "skills": {
     "heading": "Habilidades",
     "languages": "Lenguajes",
     "libraries": "ML / DL / NLP",
     "tools": "Herramientas"
+  },
+  "blog": {
+    "heading": "Blog",
+    "subtitle": "Reflexiones y aprendizajes de mis proyectos de Data Science.",
+    "read_more": "Leer más"
   },
   "contact": {
     "heading": "Contacto",

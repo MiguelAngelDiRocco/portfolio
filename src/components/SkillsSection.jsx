@@ -40,7 +40,10 @@ export default function SkillsSection() {
                     title={skill.name}
                     className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-secondary-light dark:bg-secondary border border-border-light dark:border-border-dark hover:border-accent/50 hover:-translate-y-1 transition-all duration-200 cursor-default"
                   >
-                    <skill.icon className="w-7 h-7 text-text-light-secondary dark:text-text-dark-secondary group-hover:text-accent transition-colors" />
+                    <skill.icon
+                      className="w-7 h-7 transition-colors duration-200"
+                      style={{ color: skill.color }}
+                    />
                     <span className="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary group-hover:text-text-light dark:group-hover:text-text-dark text-center transition-colors">
                       {skill.name}
                     </span>
