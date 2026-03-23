@@ -59,11 +59,6 @@ body {
   75% { transform: translate(30px, -25px) rotate(2deg); }
 }
 
-@keyframes ds-pulse {
-  0%, 100% { opacity: var(--ds-o-min, 0.1); }
-  50% { opacity: var(--ds-o-max, 0.25); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .ds-particle, .ds-symbol {
     animation: none !important;
