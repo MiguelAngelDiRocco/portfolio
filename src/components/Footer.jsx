@@ -1,6 +1,6 @@
 // Footer del sitio — Copyright, redes y botón volver arriba
 import { useTranslation } from 'react-i18next'
-import { Linkedin, Github, Twitter, ArrowUp } from 'lucide-react'
+import { Linkedin, Github, Mail, ArrowUp } from 'lucide-react'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -38,13 +38,11 @@ export default function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://x.com/migueldiroccods"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="X (Twitter)"
+            href="mailto:migueldirocco.ds@gmail.com"
+            aria-label="Email"
             className="text-text-light-secondary dark:text-text-dark-secondary hover:text-accent transition-colors"
           >
-            <Twitter size={18} />
+            <Mail size={18} />
           </a>
         </div>
 

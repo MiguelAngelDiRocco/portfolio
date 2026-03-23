@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import { Send, Linkedin, Github, Twitter, Mail, Copy, Check } from 'lucide-react'
+import { Send, Linkedin, Github, Mail, Copy, Check } from 'lucide-react'
 
 const CONTACT_EMAIL = 'migueldirocco.ds@gmail.com'
 
@@ -208,13 +208,11 @@ export default function ContactSection() {
                   GitHub
                 </a>
                 <a
-                  href="https://x.com/migueldiroccods"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:migueldirocco.ds@gmail.com"
                   className="flex items-center gap-3 text-sm text-text-light-secondary dark:text-text-dark-secondary hover:text-accent transition-colors"
                 >
-                  <Twitter size={18} />
-                  X (Twitter)
+                  <Mail size={18} />
+                  migueldirocco.ds@gmail.com
                 </a>
               </div>
             </div>

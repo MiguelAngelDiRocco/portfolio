@@ -1,7 +1,7 @@
 // Sección Hero — Primera impresión del sitio
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import { Linkedin, Github, Twitter } from 'lucide-react'
+import { Linkedin, Github, Mail } from 'lucide-react'
 
 export default function HeroSection() {
   const { t } = useTranslation()
@@ -117,13 +117,11 @@ export default function HeroSection() {
               <Github size={20} />
             </a>
             <a
-              href="https://x.com/migueldiroccods"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X (Twitter)"
+              href="mailto:migueldirocco.ds@gmail.com"
+              aria-label="Email"
               className="p-2 rounded-md text-text-light-secondary dark:text-text-dark-secondary hover:text-accent transition-colors"
             >
-              <Twitter size={20} />
+              <Mail size={20} />
             </a>
           </motion.div>
         </div>
