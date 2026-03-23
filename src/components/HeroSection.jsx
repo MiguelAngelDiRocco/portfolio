@@ -2,16 +2,8 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Linkedin, Github, Mail } from 'lucide-react'
-import useTypingEffect from '../hooks/useTypingEffect'
-
 export default function HeroSection() {
-  const { t, i18n } = useTranslation()
-
-  const typingWords = i18n.language === 'en'
-    ? ['Data Scientist', 'Machine Learning', 'Deep Learning', 'NLP']
-    : ['Data Scientist', 'Machine Learning', 'Deep Learning', 'NLP']
-
-  const typedText = useTypingEffect(typingWords)
+  const { t } = useTranslation()
 
   // Animación staggered para elementos del hero
   const container = {
@@ -69,8 +61,7 @@ export default function HeroSection() {
             variants={fadeUp}
             className="mt-3 font-mono text-sm md:text-base text-accent"
           >
-            <span>{typedText}</span>
-            <span className="animate-pulse">|</span>
+            {t('hero.title')}
           </motion.p>
 
           <motion.p
