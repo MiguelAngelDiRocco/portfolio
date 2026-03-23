@@ -212,7 +212,7 @@ export default function ContactSection() {
                   className="flex items-center gap-3 text-sm text-text-light-secondary dark:text-text-dark-secondary hover:text-accent transition-colors"
                 >
                   <Mail size={18} />
-                  migueldirocco.ds@gmail.com
+                  Contacto
                 </a>
               </div>
             </div>
