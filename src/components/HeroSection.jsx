@@ -1,9 +1,12 @@
 // Sección Hero — Primera impresión del sitio
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Linkedin, Github, Mail } from 'lucide-react'
+
 export default function HeroSection() {
   const { t } = useTranslation()
+  const [showLightbox, setShowLightbox] = useState(false)
 
   // Animación staggered para elementos del hero
   const container = {
@@ -36,16 +39,20 @@ export default function HeroSection() {
         animate="show"
         className="max-w-[1200px] mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12"
       >
-        {/* Foto de perfil */}
+        {/* Foto de perfil — clickeable para ampliar */}
         <motion.div variants={fadeUp} className="shrink-0">
-          <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden">
+          <button
+            onClick={() => setShowLightbox(true)}
+            className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
+            aria-label={t('hero.name')}
+          >
             <img
               src="/profile.jpg"
               alt={t('hero.name')}
               className="w-full h-full object-cover"
               loading="eager"
             />
-          </div>
+          </button>
         </motion.div>
 
         {/* Texto y CTAs */}
@@ -125,6 +132,31 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Lightbox modal */}
+      <AnimatePresence>
+        {showLightbox && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm cursor-pointer"
+            onClick={() => setShowLightbox(false)}
+          >
+            <motion.img
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              src="/profile.jpg"
+              alt={t('hero.name')}
+              className="max-w-[90vw] max-h-[90vh] rounded-2xl shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }
