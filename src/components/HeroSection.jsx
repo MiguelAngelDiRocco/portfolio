@@ -25,7 +25,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
+      className="relative isolate min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
       {/* Fondo animado Data Science + gradient blobs overlay */}
       <div className="absolute inset-0 -z-10">

@@ -43,7 +43,7 @@ export default function DataScienceBackground() {
     <div
       className="absolute inset-0 overflow-hidden"
       aria-hidden="true"
-      style={{ pointerEvents: 'none', zIndex: 1 }}
+      style={{ pointerEvents: 'none' }}
     >
       {particles.map((p) => (
         <span
