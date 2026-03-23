@@ -38,12 +38,14 @@ export default function HeroSection() {
       >
         {/* Foto de perfil */}
         <motion.div variants={fadeUp} className="shrink-0">
-          <img
-            src="/profile.jpg"
-            alt={t('hero.name')}
-            className="w-56 h-56 md:w-64 md:h-64 object-cover"
-            loading="eager"
-          />
+          <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden">
+            <img
+              src="/profile.jpg"
+              alt={t('hero.name')}
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
         </motion.div>
 
         {/* Texto y CTAs */}
