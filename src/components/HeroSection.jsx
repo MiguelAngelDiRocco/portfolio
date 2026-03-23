@@ -43,7 +43,7 @@ export default function HeroSection() {
         <motion.div variants={fadeUp} className="shrink-0">
           <button
             onClick={() => setShowLightbox(true)}
-            className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
+            className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-transparent border-none p-0"
             aria-label={t('hero.name')}
           >
             <img
