@@ -17,7 +17,7 @@ const projects = [
     tags: ['NLP', 'Deep Learning'],
     demo: null,
     github: 'https://github.com/MiguelAngelDiRocco/data-science3-final-project',
-    image: null,
+    image: '/projects/sentiment-analysis.png',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
     tags: ['Machine Learning'],
     demo: null,
     github: 'https://github.com/MiguelAngelDiRocco/data-science2-final-project',
-    image: null,
+    image: '/projects/pm25-prediction.png',
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const projects = [
     tags: ['Data Analysis'],
     demo: null,
     github: 'https://github.com/MiguelAngelDiRocco/data-analytics-final-project',
-    image: null,
+    image: '/projects/used-cars.png',
   },
 ]
 
