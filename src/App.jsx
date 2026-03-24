@@ -8,21 +8,30 @@ import SkillsSection from './components/SkillsSection'
 import BlogSection from './components/BlogSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import DataScienceBackground from './components/DataScienceBackground'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-primary-light dark:bg-primary">
-      <DynamicMeta />
-      <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <BlogSection />
-        <ContactSection />
-      </main>
-      <Footer />
+    <div className="relative min-h-screen bg-primary-light dark:bg-primary">
+      {/* Fondo animado global fijo */}
+      <div className="fixed inset-0 z-0 pointer-events-none" aria-hidden="true">
+        <DataScienceBackground />
+      </div>
+
+      {/* Contenido */}
+      <div className="relative z-10">
+        <DynamicMeta />
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <BlogSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }

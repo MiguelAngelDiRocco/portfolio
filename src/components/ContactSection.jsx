@@ -82,7 +82,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-secondary-light/50 dark:bg-secondary/50">
+    <section id="contact" className="py-20 bg-secondary-light/40 dark:bg-secondary/40">
       <motion.div {...anim} className="max-w-[1200px] mx-auto px-6">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-4">
           {t('contact.heading')}

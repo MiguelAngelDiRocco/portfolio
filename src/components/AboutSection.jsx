@@ -31,7 +31,7 @@ export default function AboutSection() {
   const cvFile = i18n.language === 'en' ? '/CV_MiguelDiRocco_EN.pdf' : '/CV_MiguelDiRocco_ES.pdf'
 
   return (
-    <section id="about" className="py-20 bg-primary-light dark:bg-primary">
+    <section id="about" className="py-20 bg-primary-light/80 dark:bg-primary/80">
       <motion.div {...anim} className="max-w-[1200px] mx-auto px-6">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-12">
           {t('about.heading')}

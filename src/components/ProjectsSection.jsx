@@ -33,7 +33,7 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="projects" className="py-20 bg-secondary-light/50 dark:bg-secondary/50">
+    <section id="projects" className="py-20 bg-secondary-light/40 dark:bg-secondary/40">
       <motion.div {...containerAnim} className="max-w-[1200px] mx-auto px-6">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8">
           {t('projects.heading')}

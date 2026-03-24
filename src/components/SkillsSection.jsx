@@ -14,7 +14,7 @@ export default function SkillsSection() {
   }
 
   return (
-    <section id="skills" className="py-20 bg-primary-light dark:bg-primary">
+    <section id="skills" className="py-20 bg-primary-light/80 dark:bg-primary/80">
       <motion.div {...anim} className="max-w-[1200px] mx-auto px-6">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-12">
           {t('skills.heading')}

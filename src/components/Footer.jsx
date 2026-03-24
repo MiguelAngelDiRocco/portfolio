@@ -10,7 +10,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="py-8 bg-primary-light dark:bg-primary border-t border-border-light dark:border-border-dark">
+    <footer className="py-8 bg-primary-light/80 dark:bg-primary/80 border-t border-border-light dark:border-border-dark">
       <div className="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Copyright */}
         <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
