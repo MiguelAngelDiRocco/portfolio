@@ -4,7 +4,8 @@
     "projects": "Proyectos",
     "skills": "Habilidades",
     "blog": "Blog",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "testimonials": "Recomendaciones"
   },
   "hero": {
     "name": "Miguel Angel Di Rocco",
@@ -58,6 +59,10 @@
     "error": "Hubo un error al enviar. Podés escribirme directamente a",
     "copy_email": "Copiar email",
     "copied": "¡Copiado!"
+  },
+  "testimonials": {
+    "heading": "Recomendaciones",
+    "subtitle": "Lo que dicen quienes trabajaron y estudiaron conmigo."
   },
   "footer": {
     "rights": "© 2026 Miguel. Todos los derechos reservados.",

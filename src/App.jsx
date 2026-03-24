@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectsSection'
 import SkillsSection from './components/SkillsSection'
 import BlogSection from './components/BlogSection'
+import TestimonialsSection from './components/TestimonialsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import DataScienceBackground from './components/DataScienceBackground'
@@ -28,6 +29,7 @@ export default function App() {
           <ProjectsSection />
           <SkillsSection />
           <BlogSection />
+          <TestimonialsSection />
           <ContactSection />
         </main>
         <Footer />
